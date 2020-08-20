@@ -34,18 +34,6 @@ export default {
     }
   },
 
-  computed: {
-
-    none() {
-      if (this.toDo.length >= 10)
-        {
-          return 'none'; 
-        }
-          else 
-          { return ''}
-    }
-  },
-
   methods: {
 
     delToDo (index)
@@ -63,6 +51,18 @@ export default {
         }
       if (this.toDo.length >= 10) 
       this.x = true;
+    }
+  },
+
+  computed: {
+
+    none() {
+      if (this.toDo.length >= 10)
+        {
+          return 'none'; 
+        }
+          else 
+          { return ''}
     }
   }
 }
